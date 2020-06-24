@@ -1,1 +1,91 @@
-theme: jekyll-theme-cayman
+# Site settings
+title: George Chiriluta # site title
+lang: en-UK # default lang
+timezone: UK/London # set your timezone
+image: assets/img/ogp.png # This image used for Open Graph more info https://ogp.me/
+repo: https://github.com/georgechiriluta/georgechiriluta.github.io # site repo [optional]
+mode: light # default theme "dark" | "light"
+
+# Profile settings
+author:
+  name: George Chiriluta # author name
+  short_bio:
+     <h3>Hey, I'm George.</h3>
+     <b>Software Engineer by day, aspiring AI researcher by night.</b>
+     Pursuing a career in <b>FinTech</b>, with an unsatiable enthusiasm for <b>natural language processing</b> and <b>computer vision</b>. 
+  bio: >- # tell to the world
+    <h3>Hey, I'm George. <br/> Software Engineer by day, aspiring AI researcher by night.</h3> 
+    <p>I freshly graduated from The University of Manchester with a bachelor degree in Computer Science, 
+    which was finalised with a research disseration in multimodal emotion recognition on social media.
+    I am pursuing a career in FinTech at Goldman Sachs in London where I work in the Investment Banking Engineering division.</p>
+    <p>My spicy journey in tech debuted in high school with game dev and algorithm design, 
+    followed by a keen interest in Android app development fructified over a summer internship at Continental Automotive between my junior and senior years.
+    University nurtured a passion for distributed systems with a focus on back-end and front-end stacks, while my dissertation in multimodal emotion recognition
+    had me delve at greath depth into leveraging Deep Learning for natural language processing and computer vision. </p>
+    <p> Extremely excited about the opportunities of the future, especially in the emerging fusion of FinTech and AI. </p>
+
+  twitter: GeorgeChiri
+  github: georgechiriluta
+  email: chirilutageorge@yahoo.com # your contact adress
+  avatar: /assets/img/avatar.jpeg # change with your own avatar
+
+# Url settings
+url: "https://georgechiriluta.com"
+baseurl:
+permalink: /:title/
+google_analytics:
+fb_appid:
+
+# Collection setting
+collections:
+  posts:
+    output: true
+
+# Markdown settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: post
+      comments: false
+
+# Jekyll Compose default front matter
+jekyll_compose:
+  post_default_front_matter:
+    modified:
+    tags: []
+    description:
+  draft_default_front_matter:
+    modified:
+    tags: []
+    description:
+
+# Build settings
+sass:
+  style: compressed
+
+include:
+  - _redirects
+  - .htaccess
+
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - CHANGELOG.md
+  - README.md
+  - node_modules
+  - CODE_OF_CONDUCT.md
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-postfiles

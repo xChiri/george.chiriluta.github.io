@@ -1,0 +1,15 @@
+<footer class="footer">
+  <a class="footer_item" href="mailto:{{ site.author.email }}" style="align-self: left;">{{ site.author.email }}</a>
+
+  {% if site.author.github %}
+    {% include icon-github.html username=site.author.github %}
+  {% endif %}
+
+  <span class="footer_item">George Chiriluta &copy; {{ site.time | date: "%Y" }}</span>
+</footer>
+<script src="/assets/js/main.js" defer="defer"></script>
+<script src="/assets/js/galite.js"></script>
+<script>
+  var galite = galite || {};
+  galite.UA = "{{ site.google_analytics }}";
+</script>
